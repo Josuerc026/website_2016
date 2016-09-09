@@ -1,0 +1,619 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,body{
+    width: 100%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+}
+a{
+    color: gray;
+    text-decoration: none;
+}
+
+button{
+     cursor: pointer;
+}
+
+#icon{
+    width: 55px;
+    height: 55px;
+    background-color: #FF3333;
+    position: fixed;
+    right: 0;
+    margin: 40px;
+    border-radius: 100px;
+    z-index: 1;
+    box-shadow: 1px 3px 15px darkgray;
+    
+    
+}
+#icon img{
+    padding: 12px;
+}
+header{
+    background: url("http://tinyhousegiantjourney.com/wp-content/uploads/2014/12/washington-dc-0003.jpg") no-repeat center center fixed;
+    background-size: cover;
+   
+}
+#info_box{
+    position: relative;
+    top: 100px;
+    width: 950px;
+    height: auto;
+    background-color: white;
+    display: block;
+    margin: auto;
+    box-shadow: 2px 2px 20px darkgray;
+}
+
+
+#wrapper_info{
+    padding: 35px;
+    
+}
+#info{
+    display: inline-block;
+    padding-left: 20px;
+    float: right;
+    width: 560px;
+}
+
+#info a:hover{
+    color: palevioletred;
+}
+#info p:nth-child(7),#info p:nth-child(6),#info p:nth-child(5){
+    margin-top: -1.5px;
+
+}
+#info button, #skills_section button{
+    border: 3px solid #ff5722;
+    outline: 0;
+    background-color: transparent;
+    color: #ff5722;
+    padding: 5px;
+    transition: 0.35s;
+}
+#info button:hover, #skills_section button:hover{
+    background-color:  #ff5722;
+    color: #fff;
+}
+#hello{
+   font-size: 16px;
+   background-color: /*#00cc99*/#ff5722;
+    width: 80px;
+    color: #fff;
+    padding: 5px;
+   
+    
+}
+#info p:nth-child(1)::before{
+  content: "";
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; 
+  
+  border-right:10px solid #ff5722; 
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 12px;
+}
+#info p:nth-child(2), #info p:nth-child(3){
+    font-size: 28px;
+    margin: 0;
+}
+#bottom_info{
+    background-color: #5a3ddb;
+    width: 100%;
+    height: 65px;
+}
+#social{
+    text-align: center;
+    padding: 10px;
+}
+#social i{
+    font-size: 24px;
+    margin: 10px;
+ 
+}
+#social a{
+    color: white;
+    padding: 6px;
+    padding-top: 10px;
+    transition: 0.35s;
+}
+#social a:hover{
+    
+background-color: #5136C5;
+    border-radius: 100px;
+    
+}
+.thin{
+    font-weight: 300;
+}
+
+
+@media only screen and (max-width: 768px){
+    
+    html,body{
+        width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+        
+    }
+    
+    header{
+        width: 100%;
+        height: auto;
+        
+    
+    }
+    
+   #info_box{
+        max-width: 100%;
+    }
+    #info{
+         display: block;
+    padding-left: 20px;
+    float: none;
+    max-width: 100%;
+    }
+    #info p:nth-child(1)::before{
+  content: "";
+ width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-bottom: 5px solid #ff5722;
+    position: absolute;
+    top: 330px;
+    margin-left: 50px;
+        
+ 
+}
+    #info{
+        padding: 0px;
+    }
+    
+}
+
+section{
+    display: block;
+    margin: auto;
+    width: 945px;
+    height: 100%;
+    position: relative;
+    top: 150px;
+    padding-bottom: 25px;
+  
+}
+
+article{
+    height: 100%;
+    
+}
+section h1{
+    text-align: center;
+    font-weight: 300;
+}
+section p{
+    font-size: 20px;
+    padding: 5px;
+}
+
+#skills{
+    margin-bottom: 10px;
+}
+#skills p{
+    display: inline-block;
+    width: 450px;
+    margin-right: 50px;
+    float: left;
+}
+#skills img{
+    width: 400px;
+    height: auto;
+}
+#skills_section button{
+    display: block;
+    margin: auto;
+    width: 35%;
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px;
+    
+}
+#work_button{
+    position: relative;
+    bottom: 0;
+    margin: 0 auto;
+    width: 210px;
+  
+}
+
+#work_button button{
+    margin: 0 auto;
+    width: 50px;
+    border: none;
+    border-radius: 8px;
+}
+#b_1{
+    background-color: green;
+}
+#b_2{
+    background-color: lightblue;
+}
+#b_3{
+    background-color: yellow;
+}
+#b_4{
+    background-color: lightgreen;
+}
+
+#content_box{
+    margin-top: 35px;
+    width: 950px;
+    height: 400px;
+    background: url("../img/aca.png");
+    background-position: 200% 500%;
+    background-size: contain;
+    box-shadow: 1px 6px 20px darkgray;
+}
+
+#inner_box{
+    width: 350px;
+    height: 370px;
+    background-color: mediumseagreen;
+    padding: 15px;
+}
+#inner_box p{
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+#inner_box button{
+    width: 100%;
+    height: 25px;
+}
+
+footer{
+    height: 100px;
+    background-color: lightgray;
+    position: relative;
+    bottom: -200px;
+    text-align: center;
+}
+footer h4{
+    font-weight: 100;
+    position: relative;
+    top: 35px;
+    color: gray;
+}
+@media only screen and (max-width: 768px){
+    
+    #icon{
+        margin: 15px;
+        bottom: 0;
+    }
+    
+    #inner_box button{
+        border: 3px solid gray;
+        background-color: #fff;
+        color: gray;
+        height: auto;
+        
+        
+    }
+   section{
+        max-width: 100%;
+        height: auto;
+    
+    }
+    #skills p{
+        display: block;
+        width: 100%;
+        float: none;
+        margin-right: 0px;
+        margin-left: -5px;
+    }
+    #skills img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    #content_box{
+        width: 100%;
+        background-image: none;
+        
+    }
+    #inner_box{
+        width: 95%;
+    }
+    #about p, #skills p{
+        text-align: center;
+        font-size: 18px;
+        
+    }
+    footer h4{
+        font-size: 14px;
+    }
+
+}
+
+/* ==========================================================================
+   RESPONSIVE STYLES
+   ========================================================================== */
+
+
+
+
+/*==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
