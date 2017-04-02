@@ -128,19 +128,19 @@ button{
     padding: 12px;
 }
 header{
-    background: url("http://tinyhousegiantjourney.com/wp-content/uploads/2014/12/washington-dc-0003.jpg") no-repeat center center fixed;
+    background: url("../img/metro_background.jpg") no-repeat center center fixed;
     background-size: cover;
    
 }
 #info_box{
     position: relative;
     top: 100px;
-    width: 950px;
+    width: 860px;
     height: auto;
     background-color: white;
     display: block;
     margin: auto;
-    box-shadow: 2px 2px 20px darkgray;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.8);
 }
 
 
@@ -152,7 +152,7 @@ header{
     display: inline-block;
     padding-left: 20px;
     float: right;
-    width: 560px;
+    width: 470px;
 }
 
 #info a:hover{
@@ -280,7 +280,7 @@ background-color: #5136C5;
 section{
     display: block;
     margin: auto;
-    width: 945px;
+    width: 860px;
     height: 100%;
     position: relative;
     top: 150px;
@@ -311,7 +311,7 @@ section p{
     float: left;
 }
 #skills img{
-    width: 400px;
+    width: 350px;
     height: auto;
 }
 #skills_section button{
@@ -333,7 +333,7 @@ section p{
 
 #work_button button{
     margin: 0 auto;
-    width: 50px;
+    width: 65px;
     border: none;
     border-radius: 8px;
 }
@@ -352,10 +352,10 @@ section p{
 
 #content_box{
     margin-top: 35px;
-    width: 950px;
+    width: 860px;
     height: 400px;
     background: url("../img/aca.png");
-    background-position: 200% 500%;
+    background-position: 750% 500%;
     background-size: contain;
     box-shadow: 1px 6px 20px darkgray;
 }
