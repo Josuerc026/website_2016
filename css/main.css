@@ -251,6 +251,7 @@ background-color: #5136C5;
     
    #info_box{
         max-width: 100%;
+        top: 0px;
     }
     #info{
          display: block;
@@ -273,6 +274,10 @@ background-color: #5136C5;
  
 }
     #info{
+        padding: 0px;
+    }
+    
+    #social{
         padding: 0px;
     }
     
@@ -464,6 +469,14 @@ div#container{
     height: auto;
     margin: 0 auto;
     margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px){
+    
+    div#container{
+        width: 100%;
+    }
+
 }
 
 /* ==========================================================================
